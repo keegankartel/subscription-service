@@ -1,0 +1,128 @@
+/*importing fonts from the fonts folder*/
+@font-face {
+  font-family: 'henken';
+  src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
+  font-weight: 400 700;
+}
+
+/*declearing color varialbles*/
+:root{
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue:hsl(245, 75%, 52%);
+  --primary-bright-blue-hover:hsl(245, 75%, 70%);
+  --neutral-very-pale-blue:hsl(225, 100%, 98%);
+  --neutral-Desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: 100%;
+  background-color: var(--primary-pale-blue);
+  font-family: henken, 'Edu NSW ACT Foundation', cursive;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.container{
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: white;
+}
+
+p{
+  width: 300px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--neutral-Desaturated-blue);
+  margin: 0;
+}
+
+h1{
+  margin-top: 40px;
+}
+
+.plan{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--neutral-very-pale-blue);
+  border-radius: 20px;
+  margin: 20px 20px;
+}
+
+h3,
+h3 span{
+  display: block;
+}
+
+h3 span{
+  font-weight: 400;
+  color:var(--neutral-Desaturated-blue);
+}
+
+h3{
+  padding-right: 100px;
+}
+
+a{
+  color: var(--primary-bright-blue);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.lowerpart{
+  display: grid;  
+}
+
+button{
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#payment{
+  background-color: var(--primary-bright-blue);
+  color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, .2);
+  transition: all .20s;
+}
+
+#cancle{
+  box-sizing: border-box;
+  background:none;
+  color: var(--neutral-Desaturated-blue);
+  margin-bottom: 20px;
+  transition: all .20s;
+}
+
+#payment:hover{
+  background-color: var(--primary-bright-blue-hover);
+}
+
+#cancle:hover{
+  color: black;
+}
+
+
+
+/*media query for mobile responsiveness (changed the background picture)*/
+@media (max-width:600px) {
+  body{
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    
+  }
+}
