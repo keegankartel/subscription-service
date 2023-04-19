@@ -12,7 +12,8 @@
 
 ## About The Project
   
-</p>![Screenshot (58)](https://user-images.githubusercontent.com/65241476/233085449-f440f6e1-1503-4544-8467-113789fc991b.png)
+![Screenshot (58)](https://user-images.githubusercontent.com/65241476/233086564-5ccd1d44-3155-463a-837b-184277af1d7a.png)
+
 
 This is a simple One-page web project of a subscription service.🧑‍💻
 
